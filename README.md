@@ -16,10 +16,13 @@ An AWS Lambda Function to resize/reduce images automatically. When an image is p
 Clone this repository and install dependencies:
 
 ```bash
-$ git clone git@github.com:ysugimoto/aws-lambda-image.git
+$ git clone git@github.com:anush0247/aws-lambda-image.git
 $ cd aws-lambda-image
 $ npm install .
 ```
+
+
+
 
 ### Packaging
 
