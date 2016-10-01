@@ -53,12 +53,14 @@ class S3 {
                 Body:         buffer,
                 Metadata:     { "img-processed": "true" },
                 ContentType:  headers.ContentType,
-                CacheControl: headers.CacheControl
+                CacheControl: headers.CacheControl,
+                ACL: 'public-read'
             };
 
-            if ( acl ) {
-                params.ACL = acl;
-            }
+            // if ( acl ) {
+            //     params.ACL = acl;
+            // }
+            console.log(params);
             client.putObject(params, (err) => {
                 ( err ) ? reject(err) : resolve("S3 putObject success");
             });
